@@ -1,0 +1,90 @@
+$white: #fcfcfc;
+$highlight: #00fffa; 
+$dark: #111111;
+.wrapper_wide {
+	width: 90%;
+	margin: 0 auto;
+}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+.wrapper_skinny {
+	width: 60%;
+	margin: 0 auto;
+}
+#background{
+	background-image: url(home_4.jpg);
+	height: 120vh;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	header{
+		padding: 3rem 0;
+		#logo{
+			float:left;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $white;
+			text-decoration: none;
+		}
+		nav{
+			float:right;
+			ul {
+				list-style: none; 
+				margin: 0;
+				li {
+					display:inline;
+					margin-left: 2.5rem;
+					a {
+						color: $white;
+						text-decoration: none;
+					}
+				}	
+			}
+	
+		}
+	}
+
+	h1 {
+		color: $white;
+		font-size: 3.0rem;
+		font-weight: 150;
+		letter-spacing: 1px;
+		margin: 2rem 0 2rem 0;
+	}
+}
+
+
+
+.button{
+	color: $white;
+	text-decoration: none;
+	font-size: 1rem;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	outline: none;
+	border:none;
+	display: inline-block;
+	min-width: 7.4rem;
+	margin: 1.5rem 2.5% 0 2.5%;
+}
+
+.button_highlight{
+	background-color: $highlight;
+	transition: background-color .4s ease-in-out; 
+	&:hover {
+		background-color: darken($highlight, 7.5%);
+	}
+}
+
+.button_white{
+	background-color: $white;
+	color: $dark;
+	transition: background-color .4s ease-in-out; 
+	&:hover {
+		background-color: darken($white, 7.5%);
+	}
+
+
+}
