@@ -7,9 +7,33 @@
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<% if @fondo == true %>
+	<body class="homepage">
+<% else %>	
+	<body>
+<% end %>	
+	
+	<header class="cf">
+		<div class="wrapper_wide">
+			<a href="" id="logo">Podcast.fm</a>
+			<nav>
+				<ul>
+					<li><a href="">Explore</a></li>
+					<li><a href="">Sign in</a></li>
+					<li><a href="">Create a Podcast</a></li>
+				</ul>
+			</nav>
+
+
+		</div>		
+	
+	
+		
+
 
 <%= yield %>
+
+</header>
 
 </body>
 </html>

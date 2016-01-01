@@ -14,37 +14,12 @@ $dark: #111111;
 	margin: 0 auto;
 }
 #background{
-	background-image: url(home_4.jpg);
-	height: 120vh;
+
+	height: 100%;
 	background-size: cover;
 	background-position: center;
 	text-align: center;
-	header{
-		padding: 3rem 0;
-		#logo{
-			float:left;
-			text-transform: uppercase;
-			font-weight: 700;
-			color: $white;
-			text-decoration: none;
-		}
-		nav{
-			float:right;
-			ul {
-				list-style: none; 
-				margin: 0;
-				li {
-					display:inline;
-					margin-left: 2.5rem;
-					a {
-						color: $white;
-						text-decoration: none;
-					}
-				}	
-			}
 	
-		}
-	}
 
 	h1 {
 		color: $white;
@@ -87,4 +62,45 @@ $dark: #111111;
 	}
 
 
+}
+
+
+
+
+header{
+		padding: 3rem 0;
+		#logo{
+			float:left;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $white;
+			text-decoration: none;
+		}
+		nav{
+			float:right;
+			ul {
+				list-style: none; 
+				margin: 0;
+				li {
+					display:inline;
+					margin-left: 2.5rem;
+					a {
+						color: $white;
+						text-decoration: none;
+					}
+				}	
+			}
+	
+		}
+	}
+
+
+body.homepage{
+	background-image: url(home_4.jpg);
+	width: 100%;
+    height: auto;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	background-attachment: fixed;
 }
