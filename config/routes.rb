@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   get 'podcast/index'
+  get 'podcast/show'
 
   get 'homepage/index'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

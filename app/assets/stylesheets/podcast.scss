@@ -71,3 +71,58 @@
 		}
 	}
 }
+
+
+#podcast_show {
+	#show_banner{
+		background-color: rgba(0,0,0,0.5);
+		text-align: center;
+		padding: 5rem 0;
+		h1 {
+			font-size: 5rem 0;
+			font-weight: 300;
+			color: #fcfcfc;
+			margin: 0 0 .5rem 0;
+		}
+		.description{
+			width: 75%;
+			line-height: 1.75;
+			margin: 0 auto 2rem auto;
+			color: lighten( #111111, 40%);
+		}
+		.suscribe_link{
+			font-size: .6rem;
+			text-transform: uppercase;
+			font-weight:  700;
+			color: white;
+			text-align: center;
+			display: inline;
+			background-color: #00fffa;
+			border-radius: 2rem;
+			padding:  .5rem 1rem;
+			margin: 0 5rem;
+			text-decoration: none;
+			transition: background-color .4s ease-in-out; 
+			&:hover{
+				background-color: darken(#111111, 10%);
+			}
+		}
+
+	}
+}
+
+
+#breadcrumb{
+	padding: 1rem;
+	text-align: center;
+	font-weight: 700;
+	font-size: .7rem;
+	
+	a {
+		color: lighten(white, 4rem);
+		text-decoration: none;
+		span {
+			margin: 0;
+		}
+	}
+}
