@@ -9,31 +9,26 @@
 </head>
 <% if @fondo == true %>
 	<body class="homepage">
+<% elsif  @fondo_pod == true%>	
+	<body class="home_pod">
 <% else %>	
 	<body>
 <% end %>	
 	
-	<header class="cf">
-		<div class="wrapper_wide">
+<header class="cf">
+	<div class="wrapper_wide">
 			<a href="" id="logo">Podcast.fm</a>
-			<nav>
-				<ul>
-					<li><a href="">Explore</a></li>
-					<li><a href="">Sign in</a></li>
-					<li><a href="">Create a Podcast</a></li>
-				</ul>
-			</nav>
+		<nav>
+			<ul>
+				<li><a href="">Explore</a></li>
+				<li><a href="">Sign in</a></li>
+				<li><a href="">Create a Podcast</a></li>
+			</ul>
+		</nav>
+	</div>	
+</header>		
+	<%= yield %>
 
-
-		</div>		
-	
-	
-		
-
-
-<%= yield %>
-
-</header>
 
 </body>
 </html>

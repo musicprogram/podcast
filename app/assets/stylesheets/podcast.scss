@@ -1,3 +1,73 @@
 // Place all the styles related to the Podcast controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#banner{	
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center center;
+	margin-bottom: 4rem;
+	h1{
+		text-align: center;
+		color: white;
+		font-size: 3rem;
+		font-weight: 300;
+		letter-spacing: 1px;
+		margin: 0;
+		padding: 5rem 0;
+	}
+}
+
+.podcast_banner{
+	background-image: url(banner.jpg);	
+}
+
+#podcast {
+	padding: 3rem;
+	ul{
+		list-style:none;
+		padding-left: 0;
+		margin: 0;
+		li {
+			width: 23%;
+			float:left;
+			margin: 0 1% 2rem 1%;
+			-webkit-box-shadow: 1px 2px 5px 0px rgba(50, 50, 50, 0.75);
+			-moz-box-shadow:    1px 2px 5px 0px rgba(50, 50, 50, 0.75);
+			box-shadow:         1px 2px 5px 0px rgba(50, 50, 50, 0.75);
+			border-radius: .3rem;
+			img {
+				width: 100%;
+				max-width: 100%;
+				border-radius: .35rem .35rem 0 0;
+			}
+
+			.podcast_overview{
+				padding: 1rem 7.5%;
+				h2 {
+					margin: 0;
+					font-size: 1rem;
+					font-weight: 700;
+					color: #111111;
+				}
+				.episode_count {
+					color: lighten(#111111, 50%);
+					font-size: 0.9rem;
+					margin: .5rem 0 .25rem 0;
+				}
+				
+			}
+			&:hover {
+					 img {
+						opacity: .8;
+					}
+					.podcast_overview {
+						h2{
+							color: #00fffa;
+						}
+					}
+			}
+
+		}
+	}
+}
