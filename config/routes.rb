@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :podcasts
   get 'log/sign_in'
 
   get 'log/sign_up'

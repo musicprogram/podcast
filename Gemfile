@@ -54,3 +54,4 @@ end
 
 
 gem 'normalize-rails'
+gem 'devise'
