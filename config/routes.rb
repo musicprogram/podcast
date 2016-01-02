@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'episode/index'
+
   get 'podcast/index'
   get 'podcast/show'
 
