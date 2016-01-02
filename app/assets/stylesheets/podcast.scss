@@ -85,10 +85,10 @@
 			margin: 0 0 .5rem 0;
 		}
 		.description{
-			width: 75%;
+			width: 85%;
 			line-height: 1.75;
 			margin: 0 auto 2rem auto;
-			color: lighten( #111111, 40%);
+			color: lighten( #111111, 75%);
 		}
 		.suscribe_link{
 			font-size: .6rem;
@@ -109,15 +109,16 @@
 		}
 
 	}
-}
+
 
 
 #breadcrumb{
 	padding: 1rem;
 	text-align: center;
+	border-bottom: 1px solid lighten(#111111, 75%);
 	font-weight: 700;
 	font-size: .7rem;
-	
+	color: lighten(white, 4rem);
 	a {
 		color: lighten(white, 4rem);
 		text-decoration: none;
@@ -125,16 +126,23 @@
 			margin: 0;
 		}
 	}
-
+}	
 	#episodes{
 		padding: 3rem 0;
 		ul {
 			list-style: none;
 			padding-left: 0;
 			li {
+				padding-bottom:  2rem;
+				border-bottom: 1px solid lighten(#111111, 75%);
+				margin-bottom: 2rem;
+				&:last-child {
+					border-bottom: none;
+				}
 				.episode_thumbnail{
-					width: 25%;
+					width: 22%;
 					max-width: 100%;
+					float: left;
 					img {
 						width: 10rem;
 						max-width: 100%;
@@ -142,13 +150,26 @@
 					}
 				}
 				.episode_overview{
-					width: 73.5%;
+					width: 76.5%;
 					float: left;
 					margin-left: 1.5%;
+					h2 {
+						
+							a{
+								color: lighten(#111111, 95%);
+								text-decoration: none;
+							}
+					
+					}
+					.description {
+						color: lighten(#111111, 90%)
+					}
 				}
 
 			}
 		}
 }
+
+
 
 }

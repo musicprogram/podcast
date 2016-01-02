@@ -57,7 +57,13 @@ body.home_pod{
 
 
 body.home_pod_show{
-		background-image: url(negro.jpg);
+	background-image: url(negro_2.jpg);
+	width: 100%;
+  height: auto;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	background-attachment: fixed;
 	
 }
 
@@ -101,3 +107,6 @@ body.home_pod_show{
 			}
 	}
 }
+
+
+
