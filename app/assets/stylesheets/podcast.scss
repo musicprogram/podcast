@@ -22,6 +22,14 @@
 	background-image: url(banner.jpg);	
 }
 
+.sign_in_banner{
+	background-image: url(banner_1.jpg);	
+}
+
+.sign_up_banner{
+	background-image: url(banner_2.jpg);	
+}
+
 #podcast {
 	padding: 3rem;
 	ul{
@@ -231,6 +239,9 @@
 							color: #00fffa;
 							margin-right: 1rem;
 							text-decoration: none;
+							&:hover {
+								color: #111111;
+						}
 						}
 					}
 				}
