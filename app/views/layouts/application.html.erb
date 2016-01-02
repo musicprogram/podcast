@@ -22,17 +22,25 @@
 			<a href="" id="logo">Podcast.fm</a>
 		<nav>
 			<ul>
-				<li><a href="">Explore</a></li>
-				<li><a href="">Sign in</a></li>
-				<li><a href="">Create a Podcast</a></li>
+				<% unless podcast_signed_in? %>
+					<li><a href="">Explore</a></li>
+					<li><a href=""><%= link_to "Sign In", new_podcast_session_path %></a></li>
+					<li><a href=""><%= link_to "Create a Podcast In", new_podcast_registration_path %></a></li>
+				<% else %>
+					<li><a href="">Dashboard</a></li>
+					<li><a href="">Explore</a></li>
+					<li><a href=""><%= link_to "Sign Out", destroy_podcast_session_path, method: :delete %></a></li>
+				<% end %>
 			</ul>
 		</nav>
 	</div>	
 </header>		
-
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
-
+	
+	<% if alert %>
+		<p class="alert"><%= alert %></p>
+	<% elsif notice %>
+		<p class="notice"><%= notice %></p>
+	<% end %>
 	<%= yield %>
 
 
