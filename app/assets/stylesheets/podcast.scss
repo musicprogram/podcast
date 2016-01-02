@@ -125,4 +125,30 @@
 			margin: 0;
 		}
 	}
+
+	#episodes{
+		padding: 3rem 0;
+		ul {
+			list-style: none;
+			padding-left: 0;
+			li {
+				.episode_thumbnail{
+					width: 25%;
+					max-width: 100%;
+					img {
+						width: 10rem;
+						max-width: 100%;
+						border-radius: .35rem;
+					}
+				}
+				.episode_overview{
+					width: 73.5%;
+					float: left;
+					margin-left: 1.5%;
+				}
+
+			}
+		}
+}
+
 }
