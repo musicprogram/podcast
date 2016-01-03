@@ -25,47 +25,21 @@
 	<div id="episodes">
 		<div class="wrapper_skinny">
 			<ul class="cf">
-				
-				<li class="cf">
-					<div class="episode_thumbnail">
-						<a href="#">
-							<%= image_tag("home.jpg") %>
-						</a>
-					</div>
-					<div class="episode_overview">
-						<h2><a href="#">recusandae officia deserunt nisi eligendi eveniet!</a></h2>
-						<p class="description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores fugit eos natus, provident culpa reprehenderit voluptatem iste similique temporibus. Voluptates quis ad aliquid nobis non ullam ipsa inventore quo eius.
-						</p>
-					</div>
-				</li>
-				<li class="cf">
-					<div class="episode_thumbnail">
-						<a href="#">
-							<%= image_tag("home.jpg") %>
-						</a>
-					</div>
-					<div class="episode_overview">
-						<h2><a href="#">recusandae officia deserunt nisi eligendi eveniet!</a></h2>
-						<p class="description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores fugit eos natus, provident culpa reprehenderit voluptatem iste similique temporibus. Voluptates quis ad aliquid nobis non ullam ipsa inventore quo eius.
-						</p>
-					</div>
-				</li>
-				<li class="cf">
-					<div class="episode_thumbnail">
-						<a href="#">
-							<%= image_tag("negro.jpg") %>
-						</a>
-					</div>
-					<div class="episode_overview">
-						<h2><a href="#">recusandae officia deserunt nisi eligendi eveniet!</a></h2>
-						<p class="description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores fugit eos natus, provident culpa reprehenderit voluptatem iste similique temporibus. Voluptates quis ad aliquid nobis non ullam ipsa inventore quo eius.
-						</p>
-					</div>
-				</li>
-
+				<% @episodes.each do |episode| %>
+					<li class="cf">
+						<div class="episode_thumbnail">
+							<a href="#">
+								<%= image_tag("home.jpg") %>
+							</a>
+						</div>
+						<div class="episode_overview">
+							<h2><%= link_to episode.title, podcast_episode_path(@podcast, episode) %></h2>
+							<p class="description">
+								<%= truncate(episode.description, length: 130) %>  <!-- metodo truncate para solo mostrar la cantidad de letras en una descripcion  -->
+							</p>
+						</div>
+					</li>
+				<% end %>
 			</ul>
 
 
@@ -80,3 +54,5 @@
 	<a href="#">2</a>
 	<a href="#" class="next_page">Next</a>
 </div>
+
+
