@@ -6,11 +6,6 @@ Rails.application.routes.draw do
 
   get 'dashboard/index'
 
-  get 'episode/index'
-
-  get 'podcast/index'
-  get 'podcast/show'
-
   get 'homepage/index'
 
 
@@ -18,7 +13,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'homepage#index'
+   
   
 
     get 'fm_podcasts/index'
@@ -31,6 +26,11 @@ Rails.application.routes.draw do
     resources :podcasts, only: [:index, :show] do
       resources :episodes
     end 
+
+    authenticated :podcast do 
+      root 'podcasts#dashboard' , as: "authenticated_root"
+    end  
+    root 'homepage#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

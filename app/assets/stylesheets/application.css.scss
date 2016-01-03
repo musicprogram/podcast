@@ -67,6 +67,19 @@ body.home_pod_show{
 	
 }
 
+body.dash_b{
+	background-image: url(bus.jpg);
+	width: 100%;
+  	height: auto;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	background-attachment: fixed;
+	
+}
+
+
+
 
 .pagination:before, .pagination:after {
 	content: "";
