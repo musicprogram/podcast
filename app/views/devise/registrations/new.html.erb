@@ -1,7 +1,14 @@
-<h2>Sign up</h2>
+<div id="banner" class="sign_in_banner">
+  <h1>Create a podcast. it's 100% free.</h1>
+  
+</div>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<div id="form">
+  
+<div class="wrapper_skinny">
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
+
   
   <div class="field">
     <%= f.label :title %><br />
@@ -29,8 +36,13 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class:'button button_highlight button_block' %>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<%# render "devise/shared/links" %>
+</div>
+
+
+
+</div>
