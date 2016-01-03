@@ -1,18 +1,25 @@
 <div id="podcast_show">
 	<div id="show_banner">
 		<div class="wrapper_skinny">
-			<h1>The RocketShip Podcast</h1>
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae cum deserunt ad aliquam corporis obcaecati? Pariatur voluptatibus mollitia cumque inventore reprehenderit laborum dolorem quam rem aliquid, sapiente, unde molestiae obcaecati.</p>
-			<a href="" class="suscribe_link">Itunes</a>
-			<a href="" class="suscribe_link">SounCloud</a>
-			<a href="" class="suscribe_link">POdBay</a>
+			<h1><%= @podcast.title %></h1>
+			<p class="description"><%= @podcast.description %></p>
+			<% unless @podcast.itunes.blank? %>	
+				<a href="<%= @podcast.itunes %>" class="suscribe_link">Itunes</a>
+			<% end %>
+			<% unless @podcast.soundcloud.blank? %>	
+				<a href="<%= @podcast.soundcloud %>" class="suscribe_link">SounCloud</a>
+			<% end %>
+			
 		</div>
 	</div>
 
 	<div id="breadcrumb">
-		All Podcast
-		<span>/</span>
-		The RocketShip Podcast
+		<%= link_to podcasts_path do %>
+			All Podcast
+			<span>/</span>
+			The RocketShip Podcast
+		<% end %>
+
 	</div>
 
 	<div id="episodes">

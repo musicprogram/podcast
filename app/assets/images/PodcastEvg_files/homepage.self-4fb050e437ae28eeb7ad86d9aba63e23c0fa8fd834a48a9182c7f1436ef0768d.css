@@ -1,0 +1,111 @@
+/* line 5, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+.wrapper_wide {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 9, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 13, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+.wrapper_skinny {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* line 17, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+#background {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* line 25, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+#background h1 {
+  color: #fcfcfc;
+  font-size: 3.0rem;
+  font-weight: 150;
+  letter-spacing: 1px;
+  margin: 2rem 0 2rem 0;
+}
+
+/* line 36, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+.button {
+  color: #fcfcfc;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  display: inline-block;
+  min-width: 7.4rem;
+  margin: 1.5rem 2.5% 0 2.5%;
+}
+
+/* line 49, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+.button_highlight {
+  background-color: #00fffa;
+  transition: background-color .4s ease-in-out;
+}
+/* line 52, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+.button_highlight:hover {
+  background-color: #00d9d5;
+}
+
+/* line 57, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+.button_white {
+  background-color: #fcfcfc;
+  color: #111111;
+  transition: background-color .4s ease-in-out;
+}
+/* line 61, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+.button_white:hover {
+  background-color: #e9e9e9;
+}
+
+/* line 71, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+header {
+  padding: 3rem 0;
+}
+/* line 73, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fcfcfc;
+  text-decoration: none;
+}
+/* line 80, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+header nav {
+  float: right;
+}
+/* line 82, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+header nav ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 85, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+header nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+}
+/* line 88, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+header nav ul li a {
+  color: #fcfcfc;
+  text-decoration: none;
+}
+
+/* line 99, /home/juan/Podcast_evg/app/assets/stylesheets/homepage.scss */
+body.homepage {
+  background-image: url(home_4.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-attachment: fixed;
+}

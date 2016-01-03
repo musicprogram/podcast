@@ -1,0 +1,268 @@
+/* line 5, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 4rem;
+}
+/* line 10, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#banner h1 {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 5rem 0;
+}
+
+/* line 21, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+.podcast_banner {
+  background-image: url(banner.jpg);
+}
+
+/* line 25, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+.sign_in_banner {
+  background-image: url(banner_1.jpg);
+}
+
+/* line 29, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+.sign_up_banner {
+  background-image: url(banner_2.jpg);
+}
+
+/* line 33, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast {
+  padding: 3rem;
+}
+/* line 35, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* line 39, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast ul li {
+  width: 23%;
+  float: left;
+  margin: 0 1% 2rem 1%;
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 1px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  border-radius: .3rem;
+}
+/* line 47, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast ul li img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: .35rem .35rem 0 0;
+}
+/* line 53, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast ul li .podcast_overview {
+  padding: 1rem 7.5%;
+}
+/* line 55, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast ul li .podcast_overview h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111111;
+}
+/* line 61, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast ul li .podcast_overview .episode_count {
+  color: #919191;
+  font-size: 0.9rem;
+  margin: .5rem 0 .25rem 0;
+}
+/* line 69, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast ul li:hover img {
+  opacity: .8;
+}
+/* line 73, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast ul li:hover .podcast_overview h2 {
+  color: #00fffa;
+}
+
+/* line 85, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #show_banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 5rem 0;
+}
+/* line 89, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #show_banner h1 {
+  font-size: 5rem 0;
+  font-weight: 300;
+  color: #fcfcfc;
+  margin: 0 0 .5rem 0;
+}
+/* line 95, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #show_banner .description {
+  width: 85%;
+  line-height: 1.75;
+  margin: 0 auto 2rem auto;
+  color: #d0d0d0;
+}
+/* line 101, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #show_banner .suscribe_link {
+  font-size: .6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  display: inline;
+  background-color: #00fffa;
+  border-radius: 2rem;
+  padding: .5rem 1rem;
+  margin: 0 5rem;
+  text-decoration: none;
+  transition: background-color .4s ease-in-out;
+}
+/* line 114, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #show_banner .suscribe_link:hover {
+  background-color: black;
+}
+/* line 121, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #links {
+  padding: 2rem 0;
+}
+/* line 123, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #links ul {
+  list-style: none;
+  padding-left: 0;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #d0d0d0;
+}
+/* line 129, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #links ul li {
+  display: inline;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+/* line 133, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #links ul li a {
+  color: #111111;
+  text-decoration: none;
+}
+/* line 136, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #links ul li a:hover {
+  color: #00fffa;
+}
+/* line 141, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #links ul .current {
+  color: #00fffa;
+}
+/* line 148, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #breadcrumb {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #d0d0d0;
+  font-weight: 700;
+  font-size: .7rem;
+  color: white;
+}
+/* line 155, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #breadcrumb a {
+  color: white;
+  text-decoration: none;
+}
+/* line 158, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #breadcrumb a span {
+  margin: 0;
+}
+/* line 165, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episode_Content {
+  background-image: url(negro.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-attachment: fixed;
+  padding: 4rem 0;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #d0d0d0;
+}
+/* line 176, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episode_Content .current_episode_thumbnail {
+  display: block;
+  margin: 0 auto 2rem auto;
+  width: 10rem;
+  max-width: 100%;
+  border-radius: .35rem;
+}
+/* line 183, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episode_Content h2 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* line 188, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episode_Content .description {
+  color: white;
+  text-align: center;
+  font-size: .9rem;
+  line-height: 1.7;
+}
+/* line 197, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episodes {
+  padding: 3rem 0;
+}
+/* line 199, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episodes ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 202, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episodes ul li {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: 2rem;
+}
+/* line 206, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episodes ul li:last-child {
+  border-bottom: none;
+}
+/* line 209, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episodes ul li .episode_thumbnail {
+  width: 22%;
+  max-width: 100%;
+  float: left;
+}
+/* line 213, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episodes ul li .episode_thumbnail img {
+  width: 10rem;
+  max-width: 100%;
+  border-radius: .35rem;
+}
+/* line 219, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episodes ul li .episode_overview {
+  width: 76.5%;
+  float: left;
+  margin-left: 1.5%;
+}
+/* line 225, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episodes ul li .episode_overview h2 a {
+  color: white;
+  text-decoration: none;
+}
+/* line 231, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episodes ul li .episode_overview .description {
+  color: #f7f7f7;
+}
+/* line 235, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episodes ul li .episode_overview .authorized_links {
+  font-weight: 700;
+  font-size: .8rem;
+}
+/* line 238, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episodes ul li .episode_overview .authorized_links a {
+  color: #00fffa;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+/* line 242, /home/juan/Podcast_evg/app/assets/stylesheets/podcast.scss */
+#podcast_show #episodes ul li .episode_overview .authorized_links a:hover {
+  color: #111111;
+}
