@@ -68,7 +68,7 @@ body.home_pod_show{
 }
 
 body.dash_b{
-	background-image: url(bus.jpg);
+	background-image: url(bus_1.jpg);
 	width: 100%;
   	height: auto;
 	background-size: cover;
@@ -78,6 +78,16 @@ body.dash_b{
 	
 }
 
+body.edita{
+	background-image: url(rock_1.jpg);
+	width: 100%;
+  	height: auto;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	background-attachment: fixed;
+	
+}
 
 
 
@@ -152,3 +162,9 @@ textarea {
 	display: block;
 	margin: 0 auto;
 }
+
+
+.blanco_1 {
+	color: white
+}
+

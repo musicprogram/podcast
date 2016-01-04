@@ -55,3 +55,4 @@ end
 
 gem 'normalize-rails'
 gem 'devise'
+gem "paperclip", "~> 4.3"

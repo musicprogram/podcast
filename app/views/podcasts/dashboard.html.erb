@@ -4,12 +4,12 @@
 			<h1>The RocketShip Podcast Dashboard</h1>			
 		</div>
 	</div>
-	<div id="links">
+	<div id="links_1">
 		<div class="wrapper_skinny">
 			<ul>
 				<li class="current">Episodes</li>
-        <li><%= link_to "New Episode", new_podcast_episode_path(@podcast) %></li>
-        <li><%= link_to "Account settings", edit_podcast_registration_path %></li>
+        <li><%= link_to "New Episode", new_podcast_episode_path(@podcast),class: 'blanco' %></li>
+        <li><%= link_to "Account settings", edit_podcast_registration_path,class: 'blanco' %></li>
         <li><a href="#">View Podcast</a></li>
 			</ul>
 		</div>
@@ -21,7 +21,7 @@
 					<li class="cf">
 						<div class="episode_thumbnail">
 							<a href="#">
-								<%= image_tag("home.jpg") %>
+								<%= image_tag episode.episode_thumbnail.url(:large) %>	
 							</a>
 						</div>
 						<div class="episode_overview">

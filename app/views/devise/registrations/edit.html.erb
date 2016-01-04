@@ -1,3 +1,5 @@
+<% @edita = true %>
+
 <div id="podcast_show">
   <div id="show_banner">
     <div class="wrapper_skinny">
@@ -5,7 +7,7 @@
       
     </div>
   </div>
-  <div id="links">
+  <div id="links_1">
     <div class="wrapper_skinny">
       <ul>
         <li>Episodes</li>
@@ -20,8 +22,6 @@
 
 
 
-
-
 <div id="form">
   
 <div class="wrapper_skinny">
@@ -30,18 +30,22 @@
   <%= devise_error_messages! %>
   
   <div class="field">
-    <%= f.label :title %><br />
+    <%= f.label :title , class:'blanco_1' %><br />
     <%= f.text_field :title %>
   </div>
 
   <div class="field">
-    <%= f.label :description %><br />
+    <%= f.label :description , class:'blanco_1' %><br />
     <%= f.text_area :description %>
   </div>
 
+  <div class="field">
+    <%= f.label :thumbnail , class:'blanco_1' %><br />
+    <%= f.file_field :thumbnail %>
+  </div>  
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email , class:'blanco_1' %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
@@ -52,27 +56,27 @@
   <h2>links</h2>
   
   <div class="field">
-    <%= f.label :itunes %><br />
+    <%= f.label :itunes , class:'blanco_1' %><br />
     <%= f.text_field :itunes %>
   </div>
 
   <div class="field">
-    <%= f.label :soundcloud %><br />
+    <%= f.label :soundcloud , class:'blanco_1' %><br />
     <%= f.text_field :soundcloud %>
   </div>
 
   <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+    <%= f.label :password , class:'blanco_1' %> <i>(leave blank if you don't want to change it)</i><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :password_confirmation , class:'blanco_1' %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
   <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.label :current_password , class:'blanco_1' %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
 

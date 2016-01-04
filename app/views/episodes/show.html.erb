@@ -21,7 +21,7 @@
 	
 	<div id="episode_Content">
 		<div class="wrapper_skinny">
-			<%= image_tag("perfil.jpg" , class: 'current_episode_thumbnail') %>	
+			<%= image_tag @episode.episode_thumbnail.url(:large), class: 'current_episode_thumbnail' %>	
 			<h2><%= @episode.title %></h2>
 			<p class="description">
 				<%= @episode.description %>
@@ -36,7 +36,7 @@
 				<li class="cf">
 					<div class="episode_thumbnail">
 						<a href="#">
-							<%= image_tag("home.jpg") %>
+							<%= image_tag @episode.episode_thumbnail.url(:large) %>	
 						</a>
 					</div>
 					<div class="episode_overview">						
