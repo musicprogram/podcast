@@ -1,3 +1,4 @@
+<% @sign = true %>
 <div id="banner" class="sign_in_banner">
   <h1>Create a podcast. it's 100% free.</h1>
   
@@ -11,23 +12,23 @@
 
   
   <div class="field">
-    <%= f.label :title %><br />
+    <%= f.label :title  %><br />
     <%= f.text_field :title, autofocus: true %>
   </div>
 
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email  %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
     <div class="field">
-    <%= f.label :thumbnail %><br />
+    <%= f.label :thumbnail  %><br />
     <%= f.file_field :thumbnail %>
   </div> 
     
   <div class="field">
-    <%= f.label :password %>
+    <%= f.label :password  %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
